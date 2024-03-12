@@ -1,0 +1,6 @@
+.container {
+  max-width: 500px;
+  margin: auto;  
+  border: 5px solid rgba(200, 150, 120, 0.5);
+}
+
