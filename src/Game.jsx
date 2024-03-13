@@ -8,10 +8,6 @@ const Game = () => {
     <section className={styles.container}>
       <form>
         <Palavra />
-        <Palavra />
-        <Palavra />
-        <Palavra />
-        <Palavra />
       </form>
     </section>
   );

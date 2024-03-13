@@ -1,4 +1,4 @@
-input{
+input {
   width: 2.5rem;
   height: 2.5rem;
   border: none;
@@ -6,4 +6,17 @@ input{
   text-align: center;
   text-transform: uppercase;
   margin: 0.4rem;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+  border-radius: 0.5rem;
+
+}
+
+input::selection {
+  background: #FFF;
+}
+
+
+input:focus {
+  outline-color: green;
 }
