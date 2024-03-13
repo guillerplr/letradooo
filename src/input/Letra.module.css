@@ -1,3 +1,8 @@
+/* E4E4DE
+C4C5BA
+1B1B1B
+595f39 */
+
 input {
   width: 2.5rem;
   height: 2.5rem;
@@ -8,27 +13,34 @@ input {
   font-weight: bold;
   margin: 0.4rem;
   color: transparent;
-  text-shadow: 0 0 0  #222831;
+  text-shadow: 0 0 0 #1B1B1B;
   border-radius: 0.5rem;
-  background-color: #76ABAE;
-  transition: .1s ease-out;
-} &:focus{
+  background-color: #E4E4DE;
+  transition: 0.1s ease-out;
+  cursor: default;
+}
+&:focus {
   outline: none;
-} &::selection{
+}
+&::selection {
   background-color: transparent;
 }
 
 input::selection {
-  background-color: #aaa;
-  }
-
-
-input:focus {
-  outline: none;
-  box-shadow: 0 10px 0 -6px #222831;
+  background-color: #E4E4DE;
 }
 
-input:disabled{
-  background-color: #96CBCE;
+input:focus,
+input:hover:focus {
+  outline: none;
+  box-shadow: 0 9px 0px -6px #1B1B1B;
+}
+
+input:hover {
+  box-shadow: 0 10px 0 -8px rgba(0, 0, 0, 0.3);
   
+}
+
+input:disabled {
+  background-color: #C4C5BA;
 }

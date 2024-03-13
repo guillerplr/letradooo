@@ -6,32 +6,32 @@ const Letra = ({ id, setValue, ...props }) => {
     <>
       <input
         {...props}
+        autoComplete="off"
         id={id}
         name={id}
-        onChange={(event) => {
-          event.preventDefault();
-          console.log(event);
-          setValue(event.target.value);
-          if (document.activeElement.nextSibling != null) {
-            document.activeElement.nextSibling.focus();
-          }
-        }}
         onKeyDown={(tecla) => {
-          tecla.preventDefault();
           switch (tecla.keyCode) {
+            case 13:
+              tecla.preventDefault();
+              console.log('faz a função!');
+              break;
             case 46:
             case 8:
+              tecla.preventDefault();
               setValue('');
               if (document.activeElement.previousSibling != null) {
                 document.activeElement.previousSibling.focus();
               }
               break;
             case 37:
+              tecla.preventDefault();
               if (document.activeElement.previousSibling != null) {
                 document.activeElement.previousSibling.focus();
               }
               break;
             case 39:
+              tecla.preventDefault();
+
               if (document.activeElement.nextSibling != null)
                 document.activeElement.nextSibling.focus();
               break;
@@ -50,5 +50,4 @@ const Letra = ({ id, setValue, ...props }) => {
     </>
   );
 };
-
 export default Letra;
