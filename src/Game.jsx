@@ -7,7 +7,11 @@ const Game = () => {
   return (
     <section className={styles.container}>
       <form>
-        <Palavra />
+        <Palavra classe="ativo" />
+        <Palavra disabled />
+        <Palavra disabled />
+        <Palavra disabled />
+        <Palavra disabled />
       </form>
     </section>
   );

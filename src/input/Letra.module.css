@@ -8,9 +8,10 @@ input {
   font-weight: bold;
   margin: 0.4rem;
   color: transparent;
-  text-shadow: 0 0 0  #333;
+  text-shadow: 0 0 0  #222831;
   border-radius: 0.5rem;
-  background-color: burlywood;
+  background-color: #76ABAE;
+  transition: .1s ease-out;
 } &:focus{
   outline: none;
 } &::selection{
@@ -18,11 +19,16 @@ input {
 }
 
 input::selection {
-  background: burlywood;
-}
+  background-color: #aaa;
+  }
 
 
 input:focus {
   outline: none;
-  box-shadow: 0 0 1px 2px peru;
+  box-shadow: 0 10px 0 -6px #222831;
+}
+
+input:disabled{
+  background-color: #96CBCE;
+  
 }
