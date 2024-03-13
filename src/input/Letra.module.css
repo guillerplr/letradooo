@@ -5,18 +5,24 @@ input {
   font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
   margin: 0.4rem;
   color: transparent;
-  text-shadow: 0 0 0 #000;
+  text-shadow: 0 0 0  #333;
   border-radius: 0.5rem;
-
+  background-color: burlywood;
+} &:focus{
+  outline: none;
+} &::selection{
+  background-color: transparent;
 }
 
 input::selection {
-  background: #FFF;
+  background: burlywood;
 }
 
 
 input:focus {
-  outline-color: green;
+  outline: none;
+  box-shadow: 0 0 1px 2px peru;
 }
